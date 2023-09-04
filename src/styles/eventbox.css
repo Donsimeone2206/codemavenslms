@@ -1,0 +1,34 @@
+.eventBox {
+  border: 1px solid #ff5420;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 18px;
+  font-size: 12px;
+}
+.eventBox h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.batchDisplay {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.eventTime {
+  margin-right: 20px;
+}
+.eventLog svg {
+  margin-right: 5px;
+}
+.eventStatus {
+  margin-top: 7px;
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #ffd5c7;
+  width: fit-content;
+  color: #ff5420;
+  padding: 4px 7px;
+}

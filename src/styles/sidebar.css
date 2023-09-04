@@ -1,0 +1,75 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 20px;
+  max-width: 250px;
+  height: 100vh;
+  border-right: 1px solid #ffaa90;
+  background-color: #fff;
+}
+.logo {
+  padding-bottom: 30px;
+}
+.logo img {
+  max-width: 100%;
+}
+.barIcon {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+.sideItems {
+  display: flex;
+  height: calc(100% - 70.91px);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.barItem {
+  display: flex;
+  color: #313131;
+  padding: 17px 10px;
+  transition: background 0.1s ease-in-out;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.barItem:hover {
+  background-color: #ff5420;
+  color: #fff;
+}
+.barItem:hover svg {
+  fill: #fff;
+  border-color: #fff;
+  stroke: #fff;
+}
+.barItem.active {
+  background-color: #ff5420;
+  color: #fff;
+}
+.barItem.active svg {
+  fill: #fff;
+  border-color: #fff;
+  stroke: #fff;
+}
+.barItem h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.barItem svg {
+  fill: #000;
+}
+.logoutbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffaa90;
+  padding: 15px 0;
+  border-radius: 10px;
+  color: #ff5420;
+  font-weight: 600;
+  font-size: 15px;
+}
+.logoutbtn svg {
+  margin-right: 10px;
+}
