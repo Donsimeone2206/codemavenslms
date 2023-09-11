@@ -1,0 +1,104 @@
+.quizGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+  margin-top: 50px;
+  padding: 0 30px;
+  font-family: "Inter";
+}
+.quizHead {
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+.quizHead h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.quizTopBar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ff5420;
+}
+.quizTopBar h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5420;
+}
+.quizSearch {
+  display: flex;
+  align-items: center;
+}
+.quizSearch svg {
+  margin-right: -25px;
+  z-index: 3;
+  color: #ff5420;
+}
+.quizSearch input {
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 33px;
+  border: 0;
+  background-color: #ffd5c7;
+  width: 250px;
+}
+.quizSearch input::placeholder {
+  color: #ff5420;
+  font-family: "Montserrat";
+}
+.quizBox {
+  font-size: 14px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+.quizTitle p {
+  margin-bottom: 10px;
+}
+.quizTitle h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.quizLog {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 12px;
+}
+.quizLog div {
+  display: flex;
+  align-items: center;
+}
+.quizLog div svg {
+  margin-right: 5px;
+}
+.quizInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+  font-size: 13.5px;
+}
+.quizPcText {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.pcColor {
+  color: #ff5420;
+}
+.quizPcBar {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+}
+.pcBarChild {
+  height: 100%;
+  background-color: #ff5420;
+  border-radius: inherit;
+}

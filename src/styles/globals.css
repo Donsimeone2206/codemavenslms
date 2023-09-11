@@ -6,25 +6,28 @@
 html,
 body {
   font-family: "Montserrat", sans-serif;
+  color: #313131;
 }
 /* img {
   max-width: 100%;
 } */
 a {
   text-decoration: none;
-  color: #000;
 }
-.gibMargin {
+.escapeSidebar {
   margin-left: 250px;
   z-index: -1;
 }
 .btn {
   display: block;
   width: fit-content;
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: #ff5420;
   color: #fff;
   font-size: 14px;
+  border-radius: 5px;
+  border: 0;
+  font-family: "Montserrat";
 }
 .fillBtn {
   display: flex;

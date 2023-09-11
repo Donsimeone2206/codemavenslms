@@ -27,13 +27,10 @@
   justify-content: center;
   padding: 0 5px;
 }
-/* .dashboardCont {
-} */
 .dashGrid {
-  /* margin-right: 300px; */
   display: grid;
-  grid-template-columns: 25% 45% 25%;
-  gap: 5%;
+  grid-template-columns: 28% 39% 28%;
+  gap: 2.5%;
   padding: 20px;
 }
 .headText {
@@ -56,4 +53,23 @@
 }
 .headText a svg {
   margin-left: 3px;
+}
+.dashTaskSort {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.dashTaskHead h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dashTaskSort button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 12px;
 }

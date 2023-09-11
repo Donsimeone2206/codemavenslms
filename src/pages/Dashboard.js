@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/dashboard.css";
+import Sidebar from "../components/Sidebar";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { BiSolidUserCircle } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import EventComponent from "./EventComponent";
-import TaskComponent from "./TaskComponent";
+import EventComponent from "../components/EventComponent";
+import TaskComponent from "../components/TaskComponent";
+import { ProfileSideBar } from "../components/Profile";
 const dashEventArray = [
   {
     id: 1,
@@ -36,7 +38,7 @@ const dashTaskArray = [
   {
     id: 1,
     taskTitle:
-      "Add a Quiz for Students of 3CO - JVY on the subject Fundamentals of Programming",
+      "Add a Quiz for Students of 3CO - JVY on the Subject Fundamentals of Programming",
     taskAssignedTime: "12:40 P:M",
     taskAssignedDate: "03 Jan 2023",
     taskDueTime: "03:40 P:M",
@@ -47,7 +49,7 @@ const dashTaskArray = [
   {
     id: 2,
     taskTitle:
-      "Add a Quiz for Students of 3CO - JVY on the subject Fundamentals of Programming",
+      "Add a Quiz for Students of 3CO - JVY on the Subject Fundamentals of Programming",
     taskAssignedTime: "12:40 P:M",
     taskAssignedDate: "03 Jan 2023",
     taskDueTime: "03:40 P:M",
@@ -58,7 +60,7 @@ const dashTaskArray = [
   {
     id: 3,
     taskTitle:
-      "Add a Quiz for Students of 3CO - JVY on the subject Fundamentals of Programming",
+      "Add a Quiz for Students of 3CO - JVY on the Subject Fundamentals of Programming",
     taskAssignedTime: "12:40 P:M",
     taskAssignedDate: "03 Jan 2023",
     taskDueTime: "03:40 P:M",
@@ -67,7 +69,7 @@ const dashTaskArray = [
     taskLink: "#",
   },
 ];
-const Header = () => {
+export const Header = () => {
   return (
     <div className="headerCont">
       <h2 className="welcomeText">Hi, Codemavens</h2>
@@ -111,11 +113,11 @@ const TaskGrid = () => {
       <div className="dashTaskHead">
         <h6>My Tasks</h6>
         <div className="dashTaskSort">
-          <div className="dashTaskSorter">All</div>
-          <div className="dashTaskSorter">Not Started</div>
-          <div className="dashTaskSorter">Ongoing</div>
-          <div className="dashTaskSorter">Completed</div>
-          <div className="dashTaskSorter">Missed</div>
+          <button className="dashTaskSorter">All</button>
+          <button className="dashTaskSorter">Not Started</button>
+          <button className="dashTaskSorter">Ongoing</button>
+          <button className="dashTaskSorter">Completed</button>
+          <button className="dashTaskSorter">Missed</button>
         </div>
       </div>
       <div className="tGrid">
@@ -129,13 +131,17 @@ const TaskGrid = () => {
 
 function Dashboard() {
   return (
-    <div className="dashboardCont">
-      <Header />
-      <div className="dashGrid">
-        <EventGrid />
-        <TaskGrid />
+    <>
+      <Sidebar />
+      <div className="dashboardCont escapeSidebar">
+        <Header />
+        <div className="dashGrid">
+          <EventGrid />
+          <TaskGrid />
+          <ProfileSideBar />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Dashboard;

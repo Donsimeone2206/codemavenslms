@@ -4,14 +4,67 @@
   padding: 15px;
   margin-bottom: 18px;
   font-size: 12px;
+  font-weight: 500;
 }
 .taskTitle p {
   font-size: 16px;
-  font-weight: 500;
 }
 .taskItemSect {
   display: flex;
+  margin-bottom: 10px;
 }
 .taskItemSect span {
   display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.taskItemSect span svg {
+  margin-right: 4px;
+}
+.assignedSect {
+  margin-top: 10px;
+}
+.taskStatus {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.btn {
+  font-size: 12px;
+}
+.taskItemSect .taskAlignMargin {
+  margin-left: 40.7px;
+}
+.wProgBox {
+  background-color: #ff5420;
+  padding: 15px;
+  border-radius: 12px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.progSep {
+  margin: 20px 0;
+}
+.wProgBox h3 {
+  font-weight: 600;
+}
+.wProgBox p {
+  font-size: 14px;
+}
+.qScoreBox {
+  background-color: #313131;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+.qScoreBox h2 {
+  font-size: 35px;
+  margin: 14px 0;
+}
+.qScoreBox p {
+  font-size: 14px;
 }

@@ -1,15 +1,15 @@
 import "./components/Sidebar";
 import "./styles/globals.css";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
+import Dashboard from "./pages/Dashboard";
+import Events from "./pages/Events";
+import Quizzes from "./pages/Quizzes";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <div className="gibMargin">
-        <Dashboard />
-      </div>
+      {/* <Dashboard /> */}
+      {/* <Events /> */}
+      <Quizzes />
     </div>
   );
 }

@@ -30,7 +30,7 @@ const TaskComponent = ({
       </div>
       <div className="dueSect taskItemSect">
         <p>Due</p>
-        <span>
+        <span className="taskAlignMargin">
           <AiOutlineClockCircle />
           <p>{taskDueTime}</p>
         </span>

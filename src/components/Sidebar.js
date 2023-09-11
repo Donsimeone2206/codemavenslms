@@ -39,7 +39,7 @@ const sidebarArray = [
   },
   {
     id: 6,
-    title: "Assignments",
+    title: "Projects",
     icon: <BiNotepad />,
   },
   {
