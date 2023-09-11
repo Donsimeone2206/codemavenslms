@@ -1,0 +1,26 @@
+.pHeadText {
+  font-size: 22px;
+  text-align: center;
+  color: #ff5420;
+  margin-bottom: 30px;
+}
+.userDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+.userDetails span {
+  color: #ff5420;
+}
+.userDetails h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.userDetails p {
+  font-size: 14px;
+}
+.userDetails .btn {
+  margin: 15px;
+  padding: initial 20px;
+}

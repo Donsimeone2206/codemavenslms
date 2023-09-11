@@ -1,0 +1,50 @@
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+.eventsHead {
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+.eventsHead h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.eventsTopBar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ff5420;
+}
+.eventsTopBar h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5420;
+}
+.eventsSearch {
+  display: flex;
+  align-items: center;
+}
+.eventsSearch svg {
+  margin-right: -25px;
+  z-index: 3;
+  color: #ff5420;
+}
+.eventsSearch input {
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 33px;
+  border: 0;
+  background-color: #ffd5c7;
+  width: 250px;
+}
+.eventsSearch input::placeholder {
+  color: #ff5420;
+  font-family: "Montserrat";
+}

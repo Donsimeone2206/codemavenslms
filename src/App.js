@@ -1,22 +1,15 @@
-import './App.css';
+import "./components/Sidebar";
+import "./styles/globals.css";
+import Dashboard from "./pages/Dashboard";
+import Events from "./pages/Events";
+import Quizzes from "./pages/Quizzes";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to codemavens lms
-        </a>
-      </header>
+      {/* <Dashboard /> */}
+      {/* <Events /> */}
+      <Quizzes />
     </div>
   );
 }
