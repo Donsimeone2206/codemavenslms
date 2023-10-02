@@ -5,9 +5,10 @@ import { IoNotificationsSharp } from "react-icons/io5";
 import { BiSolidUserCircle } from "react-icons/bi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 import EventComponent from "../components/EventComponent";
 import TaskComponent from "../components/TaskComponent";
-import { ProfileSideBar } from "../components/Profile";
+import { ProfileSideBar } from "../components/ProfileBar";
 const dashEventArray = [
   {
     id: 1,
@@ -95,9 +96,9 @@ const EventGrid = () => {
     <div className="eGridCont">
       <div className="headText">
         <h6>Upcoming Events</h6>
-        <a href="#">
+        <Link to="/student-events">
           View All <FaArrowUpRightFromSquare />
-        </a>
+        </Link>
       </div>
       <div className="eGrid">
         {dashEventArray.map((item) => {

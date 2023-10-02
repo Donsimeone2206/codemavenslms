@@ -1,0 +1,165 @@
+.profileBar {
+  overflow-y: scroll;
+  max-height: 85.9vh;
+  padding-bottom: 20px;
+}
+.profileBar::-webkit-scrollbar {
+  /* width: 6.5px;
+  background-color: none; */
+  display: none;
+}
+/* .profileBar::-webkit-scrollbar-thumb {
+  background-color: #cfcdcd;
+  border-radius: 3px;
+  margin-left: 5px;
+} */
+.pHeadText {
+  font-size: 22px;
+  text-align: center;
+  color: #ff5420;
+  margin-bottom: 30px;
+}
+.userDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+.userDetails span {
+  color: #ff5420;
+}
+.userDetails h5 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.userDetails p {
+  font-size: 14px;
+}
+.userDetails .btn {
+  margin: 15px;
+  padding: initial 20px;
+}
+.wProgBox {
+  background-color: #ff5420;
+  padding: 15px;
+  border-radius: 12px;
+  color: #fff;
+}
+.progSep {
+  margin: 20px 0;
+}
+.wProgBox h3 {
+  font-weight: 600;
+}
+.wProgBox p {
+  font-size: 14px;
+}
+.qScoreBox {
+  background-color: #ffaa90;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+.qScoreBox h2 {
+  font-size: 35px;
+  margin: 14px 0;
+}
+.qScoreBox p {
+  font-size: 14px;
+}
+.coProgSect svg {
+  max-height: 165px;
+}
+.slackBanner {
+  background-color: #ffaa90;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+.slackBanner a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.slackBanner a:hover {
+  color: #ff5420;
+}
+.slackBanner h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.slackInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.slackInner img {
+  margin-right: 6.8px;
+}
+.slackInner h3 {
+  font-size: 20px;
+}
+.coCube {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.coCheckers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.coCheck {
+  display: flex;
+  align-items: center;
+}
+.compCube {
+  background-color: #ffaa90;
+}
+.incompCube {
+  background-color: #ffd5c7;
+}
+.dashProfGrid {
+  display: grid;
+  gap: 20px;
+}
+@media (max-width: 1200px) {
+  .profileBar {
+    overflow-y: initial;
+    max-height: none;
+    grid-column: 1/4;
+  }
+  .dashProfGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .coProgSect svg {
+    max-height: 120px;
+  }
+  .coProgSect p {
+    font-size: 14px;
+  }
+  .coCube {
+    width: 11px;
+    height: 11px;
+  }
+}
+@media (max-width: 900px) {
+  .profileBar {
+    grid-row: 1/2;
+    grid-column: initial;
+  }
+  .userDetails {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .dashProfGrid {
+    grid-template-columns: 1fr;
+  }
+}

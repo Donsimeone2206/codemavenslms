@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 6;
   padding: 20px;
   max-width: 250px;
   height: 100vh;
@@ -72,4 +72,9 @@
 }
 .logoutbtn svg {
   margin-right: 10px;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    display: none;
+  }
 }

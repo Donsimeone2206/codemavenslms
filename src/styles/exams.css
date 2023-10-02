@@ -1,0 +1,56 @@
+.examsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 15px;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+.examsHead {
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+.examsHead h4 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.examsTopBar {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #ff5420;
+}
+.examsTopBar h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ff5420;
+}
+.examsSearch {
+  display: flex;
+  align-items: center;
+}
+.examsSearch svg {
+  margin-right: -25px;
+  z-index: 3;
+  color: #ff5420;
+}
+.examsSearch input {
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 33px;
+  border: 0;
+  background-color: #ffd5c7;
+  width: 250px;
+}
+.examsSearch input::placeholder {
+  color: #ff5420;
+  font-family: "Montserrat";
+}
+.examsBarNav {
+  display: flex;
+}
+.examsBarNav h5 {
+  margin-right: 20px;
+}

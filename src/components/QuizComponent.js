@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFillCalendarFill } from "react-icons/bs";
 import { FiClock } from "react-icons/fi";
-
+import "../styles/quizzes.css";
 export default function QuizComponent({
   title,
   courseDesc,
