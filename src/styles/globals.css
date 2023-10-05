@@ -39,3 +39,8 @@ a {
   justify-content: center;
   font-size: 12px;
 }
+@media (max-width: 900px) {
+  .escapeSidebar {
+    margin-left: 0;
+  }
+}

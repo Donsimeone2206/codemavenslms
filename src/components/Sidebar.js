@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/sidebar.css";
 import CMlogo from "../assets/codemavens-logo.png";
+import { Link, useLocation } from "react-router-dom";
 import {
   BiNotepad,
   BiSolidBookBookmark,
@@ -16,41 +17,43 @@ const sidebarArray = [
     id: 1,
     title: "Dashboard",
     icon: <BiHomeAlt2 />,
+    link: "/",
   },
   {
     id: 2,
     title: "Events",
     icon: <BiCalendarEvent />,
+    link: "/student-events",
   },
   {
     id: 3,
-    title: "Schedule",
-    icon: <AiOutlineSchedule />,
+    title: "Quizzes",
+    icon: <MdQuiz />,
+    link: "/student-quizzes",
   },
   {
     id: 4,
-    title: "Quizzes",
-    icon: <MdQuiz />,
+    title: "Exams",
+    icon: <PiExam />,
+    link: "/student-exams",
   },
   {
     id: 5,
-    title: "Exams",
-    icon: <PiExam />,
+    title: "Projects",
+    icon: <BiNotepad />,
+    link: "/student-projects",
   },
   {
     id: 6,
-    title: "Projects",
-    icon: <BiNotepad />,
+    title: "Course Contents",
+    icon: <BiSolidBookBookmark />,
+    link: "/student-courses",
   },
   {
     id: 7,
-    title: "Course Contents",
-    icon: <BiSolidBookBookmark />,
-  },
-  {
-    id: 8,
     title: "Feedback",
     icon: <MdFeedback />,
+    link: "/student-feedback",
   },
 ];
 const CMLogo = () => {
@@ -61,18 +64,20 @@ const CMLogo = () => {
   );
 };
 const SidebarItem = (props) => {
-  const { id, title, icon, active, setActive } = props;
+  const location = useLocation();
+  const locationPath = location.pathname;
+  const { id, title, icon, link, active, setActive } = props;
   return (
-    <a
-      href="#"
-      className={`barItem ${active === id ? "active" : ""} `}
+    <Link
+      to={link}
+      className={`barItem ${locationPath === link ? "active" : ""} `}
       onClick={() => {
         setActive(id);
       }}
     >
       <object className="barIcon">{icon}</object>
       <h5>{title}</h5>
-    </a>
+    </Link>
   );
 };
 const Sidebar = () => {

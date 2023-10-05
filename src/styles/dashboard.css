@@ -5,6 +5,31 @@
   justify-content: space-between;
   padding: 15px;
 }
+.eGridCont,
+.tGridCont {
+  max-height: 85vh;
+}
+.eGrid {
+  max-height: 93%;
+  overflow-y: scroll;
+}
+.tGrid {
+  overflow-y: scroll;
+  max-height: 90%;
+}
+.eGrid::-webkit-scrollbar,
+.tGrid::-webkit-scrollbar {
+  /* width: 6.5px;
+  background-color: none;
+  padding-left: 10px; */
+  display: none;
+}
+/* .eGrid::-webkit-scrollbar-thumb,
+.tGrid::-webkit-scrollbar-thumb {
+  background-color: #cfcdcd;
+  border-radius: 3px;
+  margin-left: 5px;
+} */
 .headerIcons {
   display: flex;
 }
@@ -32,6 +57,7 @@
   grid-template-columns: 28% 39% 28%;
   gap: 2.5%;
   padding: 20px;
+  padding-bottom: 0;
 }
 .headText {
   display: flex;
@@ -72,4 +98,32 @@
   cursor: pointer;
   font-family: "Montserrat";
   font-size: 12px;
+}
+@media (max-width: 1200px) {
+  .dashGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .eGridCont,
+  .tGridCont {
+    max-height: none;
+  }
+  /* .eGridCont {
+    grid-row: 1/2;
+  }
+  .tGridCont {
+    grid-row: 2/3;
+  } */
+  .eGrid {
+    max-height: none;
+    overflow-y: initial;
+  }
+  .tGrid {
+    overflow-y: initial;
+    max-height: none;
+  }
+}
+@media (max-width: 900px) {
+  .dashGrid {
+    grid-template-columns: 1fr;
+  }
 }
