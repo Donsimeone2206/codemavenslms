@@ -1,0 +1,186 @@
+.profilePageCont {
+  padding: 0 20px;
+}
+.profileReturn {
+  display: flex;
+  color: #ff5420;
+  align-items: center;
+  font-size: 18px;
+  margin: 40px 0;
+  font-weight: 600;
+}
+.profileReturn svg {
+  fill: #313131;
+  margin-right: 17px;
+}
+.profileDGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.userBox {
+  display: flex;
+  align-items: center;
+}
+.channel {
+  color: #ff5420;
+}
+.userPic {
+  margin-right: 20px;
+}
+.userPic img {
+  width: 90px;
+}
+.userInfo h6 {
+  font-size: 16px;
+}
+.userInfo p {
+  font-size: 14px;
+  font-weight: 500;
+}
+.userIDLine {
+  margin: 5px 0;
+}
+.userAttendanceBox {
+  background-color: #ffd5c7;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userAttendanceBox h3 {
+  font-size: 17px;
+}
+.attExtras {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.attExtras h6 {
+  font-size: 19px;
+}
+.attExtras h2 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.profileNav {
+  border-bottom: 1px solid #ffaa90;
+  margin-top: 55px;
+}
+.profNavBtn {
+  background: none;
+  padding: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 15px;
+  color: #313131;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+}
+.profNavBtn.active {
+  border-bottom: 1px solid #ff5420;
+  color: #ff5420;
+}
+.profGenUpper {
+  display: flex;
+  margin-top: 30px;
+}
+.profGenUpper p {
+  margin-bottom: 5px;
+}
+
+.genSect1 p {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 15px;
+  margin-right: 100px;
+}
+.cutShort {
+  max-width: 200px;
+}
+.genSect2 {
+  border: 1px solid #ffaa90;
+  padding: 15px;
+  display: flex;
+  font-size: 14px;
+}
+.freedareal {
+  margin-right: 80px;
+}
+.genSect2 h6 {
+  font-size: 17px;
+  color: #ff5420;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.genSect2 svg {
+  fill: #ff5420;
+  stroke: #ff5420;
+}
+.profGenLower {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.genBox {
+  padding: 15px;
+  border: 1px solid #ffaa90;
+  border-radius: 5px;
+}
+.genBox p {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.orNot {
+  display: flex;
+}
+.colorGray {
+  color: #6b6b6b;
+}
+.colorGreen {
+  color: #0cbc8b;
+}
+.colorRed {
+  color: #f93333;
+}
+.colorGrey {
+  color: #9e9e9e;
+}
+.mRight {
+  margin-right: 10px;
+}
+.genBoxHead {
+  font-weight: 600;
+  color: #ff5420;
+  margin-bottom: 12px;
+}
+.sectDeets {
+  display: flex;
+  margin: 20px 0;
+}
+.sectDeets p {
+  font-weight: 600;
+  margin-right: 25px;
+  font-size: 14px;
+}
+.profQuizSect {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+.profExamsSect {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+.profProjSect {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}

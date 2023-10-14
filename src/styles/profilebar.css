@@ -64,6 +64,7 @@
 .qScoreBox h2 {
   font-size: 35px;
   margin: 14px 0;
+  font-weight: 600;
 }
 .qScoreBox p {
   font-size: 14px;

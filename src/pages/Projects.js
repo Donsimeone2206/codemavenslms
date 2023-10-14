@@ -57,7 +57,7 @@ export default function Projects() {
     </div>
   );
 }
-const ProjectBox = ({
+export const ProjectBox = ({
   title,
   projectDesc,
   projectInst,

@@ -5,6 +5,25 @@ import { Link } from "react-router-dom";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "../styles/profilebar.css";
+
+export const QScoreBox = () => {
+  return (
+    <div className="qScoreBox">
+      <h3>Total Quiz Score</h3>
+      <h2>660</h2>
+      <p>Your total quiz score so far</p>
+    </div>
+  );
+};
+export const WProgBox = () => {
+  return (
+    <div className="wProgBox">
+      <h3>Your Weekly Progress</h3>
+      <p className="progSep">You’re currently in week 6 of 6</p>
+      <p>We are almost there!</p>
+    </div>
+  );
+};
 export const ProfileSideBar = () => {
   return (
     <div className="profileBar">
@@ -23,16 +42,8 @@ export const ProfileSideBar = () => {
         </Link>
       </div>
       <div className="dashProfGrid">
-        <div className="wProgBox">
-          <h3>Your Weekly Progress</h3>
-          <p className="progSep">You’re currently in week 6 of 6</p>
-          <p>We are almost there!</p>
-        </div>
-        <div className="qScoreBox">
-          <h3>Total Quiz Score</h3>
-          <h2>660</h2>
-          <p>Your total quiz score so far</p>
-        </div>
+        <WProgBox />
+        <QScoreBox />
         <div className="coProgSect">
           <CircularProgressbar
             strokeWidth={12}
