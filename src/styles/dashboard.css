@@ -3,7 +3,9 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
+  position: relative;
 }
 .eGridCont,
 .tGridCont {
@@ -19,19 +21,38 @@
 }
 .eGrid::-webkit-scrollbar,
 .tGrid::-webkit-scrollbar {
-  /* width: 6.5px;
-  background-color: none;
-  padding-left: 10px; */
   display: none;
 }
-/* .eGrid::-webkit-scrollbar-thumb,
-.tGrid::-webkit-scrollbar-thumb {
-  background-color: #cfcdcd;
-  border-radius: 3px;
-  margin-left: 5px;
-} */
+.dropFloat {
+  position: absolute;
+  right: 20px;
+  top: 77px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px #0000004f;
+  display: none;
+}
+.dropFloat.active {
+  display: initial;
+}
+.floatProf {
+  display: flex;
+  align-items: center;
+}
+.dropFloat svg {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #ff5420;
+}
+.dropFloat a {
+  font-size: 14px;
+  font-family: "Inter";
+  color: #313131;
+}
 .headerIcons {
   display: flex;
+  align-items: center;
 }
 .notifs {
   background-color: #ffaa90;
@@ -43,6 +64,7 @@
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  cursor: pointer;
 }
 .userDropdown {
   background-color: #ffaa90;
@@ -50,7 +72,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.userDropdown svg {
+  font-size: 25px;
+}
+.navToggle {
+  cursor: pointer;
+  display: none;
+}
+.navToggle svg {
+  font-size: 25px;
 }
 .dashGrid {
   display: grid;
@@ -107,12 +140,6 @@
   .tGridCont {
     max-height: none;
   }
-  /* .eGridCont {
-    grid-row: 1/2;
-  }
-  .tGridCont {
-    grid-row: 2/3;
-  } */
   .eGrid {
     max-height: none;
     overflow-y: initial;
@@ -125,5 +152,26 @@
 @media (max-width: 900px) {
   .dashGrid {
     grid-template-columns: 1fr;
+  }
+  .navToggle {
+    display: initial;
+  }
+  .headerCont {
+    z-index: 10;
+  }
+}
+@media (max-width: 450px) {
+  .welcomeText {
+    font-size: 20px;
+  }
+  .notifs {
+    width: 30px;
+    height: 30px;
+  }
+  .userDropdown {
+    padding: 3.5px 5px;
+  }
+  .dropFloat {
+    top: 70px;
   }
 }

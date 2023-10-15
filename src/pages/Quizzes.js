@@ -42,12 +42,12 @@ const quizArray = [
     quizLink: "#",
   },
 ];
-function Quizzes() {
+function Quizzes({ navOn, setNavOn }) {
   return (
     <>
-      <Sidebar />
+      <Sidebar navOn={navOn} setNavOn={setNavOn} />
       <div className="quizCont escapeSidebar">
-        <Header />
+        <Header navOn={navOn} setNavOn={setNavOn} />
         <header className="quizHead">
           <h4>Quizzes</h4>
           <div className="quizTopBar">

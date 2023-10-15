@@ -161,7 +161,7 @@ const Profile = () => {
     <div className="profilePageCont">
       <Link to="/" className="profileReturn">
         <AiOutlineArrowLeft />
-        <p>Student Profile</p>
+        <p>Back</p>
       </Link>
       <div className="profileDGrid">
         <div className="userBox">

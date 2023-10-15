@@ -75,6 +75,10 @@
 }
 @media (max-width: 900px) {
   .sidebar {
-    display: none;
+    transform: translateX(-250px);
+    transition: transform 0.3s;
+  }
+  .sidebar.showNav {
+    transform: translateX(0);
   }
 }
