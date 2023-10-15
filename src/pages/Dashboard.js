@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/dashboard.css";
 import Sidebar from "../components/Sidebar";
+import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { IoNotificationsSharp } from "react-icons/io5";
 import { BiSolidUserCircle } from "react-icons/bi";
-import { RiArrowDropDownLine } from "react-icons/ri";
+import { AiOutlineClose } from "react-icons/ai";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import EventComponent from "../components/EventComponent";
@@ -70,22 +72,42 @@ const dashTaskArray = [
     taskLink: "#",
   },
 ];
-export const Header = () => {
+export const Header = ({ navOn, setNavOn }) => {
+  const [drop, setDrop] = useState(false);
   return (
     <div className="headerCont">
+      <div
+        className="navToggle"
+        onClick={() => {
+          setNavOn(!navOn);
+        }}
+      >
+        {navOn ? <AiOutlineClose /> : <HiOutlineMenuAlt2 />}
+      </div>
       <h2 className="welcomeText">Hi, Codemavens</h2>
       <div className="headerIcons">
         <div className="notifs">
           <IoNotificationsSharp />
         </div>
-        <div className="userDropdown">
+        <div
+          className="userDropdown"
+          onClick={() => {
+            setDrop(!drop);
+          }}
+        >
           <span className="userIcon">
-            <BiSolidUserCircle size={30} />
+            <BiSolidUserCircle />
           </span>
           <span className="downIcon">
-            <RiArrowDropDownLine size={20} />
+            {drop ? <FiChevronUp size={20} /> : <FiChevronDown size={20} />}
           </span>
         </div>
+      </div>
+      <div className={`dropFloat ${drop && "active"}`}>
+        <Link to="/student-profile" className="floatProf">
+          <BiSolidUserCircle />
+          <p>My Profile</p>
+        </Link>
       </div>
     </div>
   );
@@ -130,12 +152,12 @@ const TaskGrid = () => {
   );
 };
 
-function Dashboard() {
+function Dashboard({ navOn, setNavOn }) {
   return (
     <>
-      <Sidebar />
+      <Sidebar navOn={navOn} setNavOn={setNavOn} />
       <div className="dashboardCont escapeSidebar">
-        <Header />
+        <Header navOn={navOn} setNavOn={setNavOn} />
         <div className="dashGrid">
           <EventGrid />
           <TaskGrid />

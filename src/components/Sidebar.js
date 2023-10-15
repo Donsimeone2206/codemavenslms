@@ -66,13 +66,14 @@ const CMLogo = () => {
 const SidebarItem = (props) => {
   const location = useLocation();
   const locationPath = location.pathname;
-  const { id, title, icon, link, active, setActive } = props;
+  const { id, title, icon, link, active, setActive, setNavOn } = props;
   return (
     <Link
       to={link}
       className={`barItem ${locationPath === link ? "active" : ""} `}
       onClick={() => {
         setActive(id);
+        setNavOn(false);
       }}
     >
       <object className="barIcon">{icon}</object>
@@ -80,10 +81,10 @@ const SidebarItem = (props) => {
     </Link>
   );
 };
-const Sidebar = () => {
+const Sidebar = ({ navOn, setNavOn }) => {
   const [active, setActive] = useState(1);
   return (
-    <div className="sidebar">
+    <div className={`sidebar ${navOn && "showNav"}`}>
       <CMLogo />
       <div className="sideItems">
         <div className="sidebarGrid">
@@ -94,6 +95,7 @@ const Sidebar = () => {
                 {...item}
                 active={active}
                 setActive={setActive}
+                setNavOn={setNavOn}
               />
             );
           })}

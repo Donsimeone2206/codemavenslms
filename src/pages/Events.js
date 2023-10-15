@@ -87,12 +87,12 @@ const EventsGrid = () => {
     </div>
   );
 };
-function Events() {
+function Events({ navOn, setNavOn }) {
   return (
     <>
-      <Sidebar />
+      <Sidebar navOn={navOn} setNavOn={setNavOn} />
       <div className="eventsCont escapeSidebar">
-        <Header />
+        <Header navOn={navOn} setNavOn={setNavOn} />
         <header className="eventsHead">
           <h4>Upcoming Events</h4>
           <div className="eventsTopBar">

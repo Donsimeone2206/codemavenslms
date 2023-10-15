@@ -30,13 +30,13 @@ const examsArray = [
     quizLink: "#",
   },
 ];
-export default function Exams() {
+export default function Exams({ navOn, setNavOn }) {
   return (
     <div>
       <>
-        <Sidebar />
+        <Sidebar navOn={navOn} setNavOn={setNavOn} />
         <div className="examsCont escapeSidebar">
-          <Header />
+          <Header navOn={navOn} setNavOn={setNavOn} />
           <header className="examsHead">
             <h4>Exams</h4>
             <div className="examsTopBar">

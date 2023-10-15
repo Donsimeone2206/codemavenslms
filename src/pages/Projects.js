@@ -25,13 +25,13 @@ const projectArray = [
     projectLink: "#",
   },
 ];
-export default function Projects() {
+export default function Projects({ navOn, setNavOn }) {
   return (
     <div>
       <>
-        <Sidebar />
+        <Sidebar navOn={navOn} setNavOn={setNavOn} />
         <div className="projectCont escapeSidebar">
-          <Header />
+          <Header navOn={navOn} setNavOn={setNavOn} />
           <header className="projectsHead">
             <h4>Projects</h4>
             <div className="projectsTopBar">
@@ -57,7 +57,7 @@ export default function Projects() {
     </div>
   );
 }
-const ProjectBox = ({
+export const ProjectBox = ({
   title,
   projectDesc,
   projectInst,
